@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" android:layout_height="fill_parent"
+ android:background="@color/view_background"
+ android:orientation="vertical">
+
+ <TextView android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:padding="10dp"
+  android:text="@string/search_farmer" android:textSize="20sp" />
+
+ <EditText android:id="@+id/myFilter" android:layout_width="match_parent"
+  android:layout_height="wrap_content" android:ems="10" 
+  android:hint="@string/search_farmer">
+  <requestFocus />
+ </EditText>
+
+ <ListView android:id="@+id/lvFarmInputs" android:layout_width="fill_parent"
+  android:layout_height="fill_parent" />
+
+</LinearLayout>

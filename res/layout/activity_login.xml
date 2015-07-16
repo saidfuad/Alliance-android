@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/view_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="LOGIN"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"/>
+        <!--  Company Title Spinner  
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sCompany">
+
+            </Spinner>-->
+        <!--  Username Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <!--  Username TextField -->
+        <EditText
+            android:id="@+id/etLoginUser"
+            android:maxLines="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"/>
+
+        <!--  Password Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <!--  Password TextField -->
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:maxLines="1"
+            android:hint="Password" />
+
+        <!--  Error message -->
+        <TextView 
+            android:id="@+id/tvLoginError"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#e30000"
+            android:padding="10dip"
+            android:textStyle="bold"/>
+
+        <!--  Login Button -->
+        <CheckBox
+            android:layout_width="414dp"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:id="@+id/cbSaveLoginCheckBox"
+            android:checked="false"
+            android:textColor="#ff000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Login" />
+
+    </LinearLayout>
+
+</ScrollView>

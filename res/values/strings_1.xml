@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name2">Farm App</string>
+    <string name="title_activity_gpstrackers">GPSTrackers</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_show_data">ShowDAta</string>
+    <string name="google_map_api_key">AIzaSyCex5IHSw8MYuxZ-p7mPuzcPvdy_9QJIcM</string>
+    <string name="btnUploadToServer">Save Farmer Details</string>
+    <string name="female">F</string>
+    <string name="male">M</string>
+    <!-- other strings -->
+    <string name="open_serial_fail">Open the serial port fails!</string>
+
+    <!-- MyApplication -->
+    <string name="connect_success">connect success</string>
+    <string name="connect_fail">connect fail</string>
+    <string name="connect_lost">connect lost</string>
+    <!-- BluetoothChat -->
+    <string name="enable_bluetooth">Bluetooth-enabled</string>
+    <string name="disable_bluetooth">Bluetooth has been disabled</string>
+    <string name="no_bluetooth">Device does not support Bluetooth</string>
+    <string name="connecting_bluetooth">connecting,please wait...</string>
+    <string name="connect_bluetooth">connect bluetooth</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_bluetooth_device">select a device to connect</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+
+    <!-- main activity -->
+    <string name="baudrate">Baudrate:</string>
+    <string name="version">Version</string>
+    <string name="stop_connect">Disconnect</string>
+    <string name="pin">ID</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="loop_read">Loop Read</string>
+    <string name="barcode">Bar Code</string>
+    <string name="rfid">RFID</string>
+    <string name="exit_toast">Press again to exit the program</string>
+    <!-- sfz activity -->
+    <string name="read_sfz">Reader</string>
+    <string name="sequential_sfz">Continuous reader</string>
+    <string name="stop">Stop</string>
+    <string name="clear_sfz">Clear</string>
+    <string name="read_card_fail">Did not find a card</string>
+    <string name="read_card_success">Successful reader</string>
+
+    <!-- FingerprintActivity -->
+    <string name="print_finger">Please place finger</string>
+    <string name="print_finger_again">Place finger again!</string>
+    <string name="processing">Processing ...</string>
+    <string name="generate_char_fail">Generate the feature value failed!</string>
+    <string name="reg_model_success">Template synthesis success!</string>
+    <string name="reg_model_fail">Synthetic template failed!</string>
+    <string name="register_success">Registered successfully!</string>
+    <string name="register_fail">Registration failed!</string>
+    <string name="verifying_wait">Validating, please wait ...</string>
+    <string name="down_char_fail">Download a template fails</string>
+    <string name="verifying_through">Verified through</string>
+    <string name="verifying_fail">Authentication failed</string>
+    <string name="up_image_success">up image success</string>
+    <string name="up_image_fail">up image fail</string>
+    <string name="clear_model">Clear Model</string>
+    <string name="id_model">ID:</string>
+    <string name="clear_model_success">clear model success</string>
+    <string name="clear_model_fail">clear model fail</string>
+    <string name="enter_id">please enter ID</string>
+    <string name="register3">register</string>
+    <string name="down_store">down and store</string>
+    <string name="validate3">verification</string>
+    <string name="down_store_success">down and store success</string>
+    <string name="down_store_fail">down and store fail</string>
+    <string name="search_success">search success</string>
+    <string name="search_fail">search fail</string>
+    <string name="down_store_null">model can not be null</string>
+
+    <string-array name="fingerprint_size">
+        <item>small fingerprint</item>
+        <item>big fingerprint</item>
+    </string-array>
+
+    <!-- RFID -->
+    <string name="card_number">Card</string>
+    <string name="read_card">Reader</string>
+    <string name="write_card">Write cards</string>
+    <string name="write_password">Password:</string>
+    <string name="update_password">Change Password</string>
+    <string name="write_block_num">Write block number:</string>
+    <string name="write_data">Write Data:</string>
+    <string name="read_block_num">Read block number:</string>
+    <string name="read_data">Read data:</string>
+    <string name="writing_wait">Writing cards, please wait ...</string>
+    <string name="reading_wait">Being reader, please wait ...</string>
+    <string name="writing_success">Successful write cards</string>
+    <string name="writing_fail">Failed to write cards</string>
+    <string name="reading_success">Successful reader</string>
+    <string name="reading_fail">Reader fails</string>
+    <string name="card_to_area">Keep the card into a reader</string>
+    <string name="first_card">Please reader, and then verify the fingerprint!</string>
+    <string name="back">Back</string>
+    <string name="register_fingerprint">Registering fingerprints</string>
+    <string name="validate_fingerprint">Fingerprint verification</string>
+    <string name="calibration">calibration</string>
+    <string name="first_register">Please register fingerprints!</string>
+    <string name="no_card_with_data">Did not find a card with return data</string>
+    <string name="no_card_without_data">Did not find a card with no return data, timeout! </string>
+    <string name="find_card_exception">May be other exceptions</string>
+    <string name="bluetooth_no_connect">Bluetooth is not connected!</string>
+    <string name="write_data_toast">Write data can not be empty</string>
+    <string name="write_toast">Write block number, the data can not be empty</string>
+    <string name="read_toast">When read in block number can not be empty</string>
+
+    <!-- barcode -->
+    <string name="open_success">open bar code success</string>
+    <string name="open_fail">open bar code fail</string>
+    <string name="close_success">close bar code success</string>
+    <string name="close_fail">close bar code fail</string>
+    <string name="scan">scan</string>
+    <string name="scan_parameter">Scan Configuration Parameter</string>
+    <string name="close_scan">close</string>
+    <string name="setting">Setting</string>
+    <string name="not_init">Not initialized!</string>
+    <string name="not_open">Not open!</string>
+    <string name="setHost">setHost</string>
+    <string name="packetformat">packetformat</string>
+    <string name="startdecode">startdecode</string>
+    <string name="ack">ACK</string>
+    <string name="nak">NAK</string>
+    <string name="prepare_dialog">please wait...</string>
+    <string name="decode_fail">decode fail</string>
+    <string name="enable">enable</string>
+    <string name="disable">disable</string>
+    <string name="restore">Set Factory Defaults</string>
+    <string name="set_host">Set Host</string>
+    <string name="disable_all_symbologies">Disable All Symbologies</string>
+    <string name="one_d_symbologies">1D Symbologies</string>
+    <string name="upc_a_text">UPC-A</string>
+    <string name="upc_e_text">UPC-E</string>
+    <string name="upc_e1_text">UPC-E1</string>
+    <string name="ean_8_jan_8_text">EAN-8/JAN-8</string>
+    <string name="ean_13_jan_13_text">EAN-13/JAN-13</string>
+    <string name="bookland_ean_text">Bookland EAN</string>
+    <string name="bookland_isbn_format_text">Bookland ISBN Format</string>
+    <string name="enable_isbn_10">Bookland ISBN-10</string>
+    <string name="enable_isbn_13">Bookland ISBN-13</string>
+    <string name="ucc_coupon_extended_code_text">UCC COUPON EXTENDED CODE</string>
+    <string name="issn_ean_text">ISSN EAN</string>
+    <string name="code_128_text">Code 128</string>
+    <string name="gs1_128_text">GS1-128 (formerly UCC/EAN-128)</string>
+    <string name="isbt_128_text">ISBT 128</string>
+    <string name="code_39_text">Code 39</string>
+    <string name="trioptic_code_39_text">Trioptic Code 39</string>
+    <string name="code_93_text">Code 93</string>
+    <string name="code_11_text">Code 11</string>
+    <string name="itf_text">Interleaved 2 of 5</string>
+    <string name="dtf_text">Discrete 2 of 5</string>
+    <string name="codabar_text">Codabar</string>
+    <string name="msi_text">MSI</string>
+    <string name="ctf_text">Chinese 2 of 5</string>
+    <string name="mtf_text">Matrix 2 of 5</string>
+    <string name="ktf_text">Korean 3 of 5</string>
+    <string name="inverse_1d_text">Inverse 1D</string>
+    <string name="regular">Regular</string>
+    <string name="inverse_only">Inverse Only</string>
+    <string name="inverse_autodetect">Inverse Autodetect</string>
+    <string name="two_d_symbologies">2D Symbologies</string>
+    <string name="pdf417_text">PDF417</string>
+    <string name="micro_pdf417_text">MicroPDF417</string>
+    <string name="code_128_emulation_text">Code 128 Emulation</string>
+    <string name="data_matrix">Data Matrix</string>
+    <string name="data_matrix_inverse_text">Data Matrix Inverse</string>
+    <string name="decode_mirror_images_text">Decode Mirror Images (Data Matrix Only)</string>
+    <string name="never">Never</string>
+    <string name="always">Always</string>
+    <string name="auto">Auto</string>
+    <string name="maxicode_text">Maxicode</string>
+    <string name="qr_code_text">QR Code</string>
+    <string name="qr_inverse_text">QR Inverse</string>
+    <string name="micro_qr_text">MicroQR</string>
+    <string name="aztec_text">Aztec</string>
+    <string name="aztec_inverse_text">Aztec Inverse</string>
+    <string name="postal_codes">Postal Codes</string>
+    <string name="us_postnet_text">US Postnet</string>
+    <string name="us_planet_text">US Planet</string>
+    <string name="uk_postal_text">UK Postal</string>
+    <string name="japan_postal_text">Japan Postal</string>
+    <string name="australia_post_text">Australia Post</string>
+    <string name="netherlands_kix_code_text">Netherlands KIX Code</string>
+    <string name="usps_4cb_one_code_intelligent_mail_text">USPS 4CB/One Code/Intelligent Mail</string>
+    <string name="upu_fics_postal_text">UPU FICS Postal</string>
+    <string name="set_success">Set successfully</string>
+    <string name="set_fail">Failed to set</string>
+    <!-- 15693 -->
+    <string name="init">init</string>
+    <string name="find">find</string>
+    <string name="read_15693">Read</string>
+    <string name="write_15693">Write</string>
+    <string name="no_null_toast">Data cannot be empty!</string>
+    <string name="init_success">Initial success</string>
+    <string name="init_fail">Failed to initialize</string>
+    <string name="find_success">Success</string>
+    <string name="find_fail">Fail</string>
+    <string name="read_15693_success">Read Success</string>
+    <string name="read_15693_fail">Read Fail</string>
+    <string name="write_15693_success">Write Success</string>
+    <string name="write_15693_fail">Write Fail</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="start">Start</string>
+    <string name="stop2">Stop</string>
+    <string name="about">About</string>
+    <string name="goto_page">Go to page…</string>
+    <string name="goto_page_dialog_title">Go to page</string>
+    <string name="goto_page_go_button">Go</string>
+    <string name="rotate_page_left">Rotate left</string>
+    <string name="rotate_page_right">Rotate right</string>
+    <string name="find_text">Find…</string>
+    <string name="find_dialog_title">Find text</string>
+    <string name="find_go_button">Find</string>
+    <string name="find_cancel_button">Cancel</string>
+    <string name="clear_find_text">Clear find</string>
+    <string name="choose_file">Open…</string>
+    <string name="toggle_invert">Invert</string>
+    <string name="toggle_fine_zoom">Toggle fine zoom</string>
+    <string name="set_as_home">Set current folder as home</string>
+    <string name="go_home">Home</string>
+    <string name="searching_for">Searching for "%1$s"</string>
+    <string name="page_of">Page %1$d of %2$d</string>
+    <string name="options">Settings</string>
+    <string name="zoom_animation">Zoom buttons</string>
+
+    <string-array name="zoom_animations">
+        <item>100</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="zoom_animation_labels">
+        <item>disabled</item>
+        <item>disappear</item>
+        <item>almost disappear</item>
+        <item>fade</item>
+    </string-array>
+
+    <string name="default_zoom_animation">2</string>
+    <string name="page_animation">Page number/count</string>
+
+    <string-array name="page_animations">
+        <item>100</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="page_animation_labels">
+        <item>disabled</item>
+        <item>disappear</item>
+        <item>almost disappear</item>
+        <item>fade</item>
+        <item>show always</item>
+    </string-array>
+
+    <string name="default_page_animation">2</string>
+    <string name="fade_speed">Zoom and page fade wait</string>
+
+    <string-array name="fade_speeds">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="fade_speed_labels">
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+        <item>5 seconds</item>
+        <item>6 seconds</item>
+        <item>7 seconds</item>
+    </string-array>
+
+    <string name="default_fade_speed">7</string>
+    <string name="invert">Invert colors</string>
+    <string name="dirs_first">List directories first</string>
+    <string name="show_extension">Show .pdf extension</string>
+    <string name="orientation">Orientation</string>
+    <string name="default_orientation">0</string>
+
+    <string-array name="orientation_labels">
+        <item>automatic</item>
+        <item>harder to change</item>
+        <item>lock to portrait</item>
+        <item>lock to landscape</item>
+    </string-array>
+    <string-array name="orientations">
+        <item>0</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="viewer">PDF Viewer</string>
+    <string name="selector">File Chooser</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="render_ahead">Render ahead</string>
+    <string name="render_ahead_sub">Uses more memory but faster forward scrolling.</string>
+    <string name="gray">Grayscale</string>
+    <string name="gray_sub">No colors, slightly slower, but uses less memory.</string>
+    <string name="page">Page</string>
+    <string name="color_mode">Color mode</string>
+
+    <string-array name="color_mode_labels">
+        <item>Normal color</item>
+        <item>Inverted color</item>
+        <item>Normal black and white</item>
+        <item>Inverted black and white</item>
+        <item>Black on yellowish</item>
+        <item>Green on black</item>
+        <item>Red on black</item>
+    </string-array>
+    <string-array name="color_modes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="default_color_mode">0</string>
+    <string name="omit_images">Skip images</string>
+    <string name="vertical_scroll_lock">Vertical scroll lock</string>
+    <string name="vertical_scroll_lock_sub">To scroll horizontally, you must first move horizontally 1/5 of the screen width.</string>
+    <string name="box">PDF page box type</string>
+
+    <string-array name="box_labels">
+        <item>ArtBox</item>
+        <item>BleedBox</item>
+        <item>CropBox</item>
+        <item>MediaBox</item>
+        <item>TrimBox</item>
+    </string-array>
+    <string-array name="boxes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="default_box">2</string>
+    <string name="extra_cache">Extra cache memory</string>
+    <string name="extra_cache_sub">Using extra cache memory can improve scrolling smoothness at the expense of stability.</string>
+
+    <string-array name="extra_caches">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="extra_cache_labels">
+        <item>none</item>
+        <item>1 MB</item>
+        <item>2 MB</item>
+        <item>4 MB</item>
+        <item>6 MB</item>
+        <item>8 MB</item>
+        <item>10 MB</item>
+    </string-array>
+
+    <string name="default_extra_cache">0</string>
+    <string name="side_margin">Extra side margins</string>
+    <string name="default_side_margin">0</string>
+
+    <string-array name="margins">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="margin_labels">
+        <item>none</item>
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+
+    <string name="top_margin">Space between pages</string>
+    <string name="default_top_margin">10</string>
+    <string name="remove_from_recent">Remove from recent</string>
+
+    <string-array name="double_tap_actions">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="double_tap_action_labels">
+        <item>none</item>
+        <item>zoom in</item>
+        <item>zoom in or back out</item>
+    </string-array>
+
+    <string name="default_double_tap_action">2</string>
+    <string name="double_tap_action">Double tap action</string>
+
+    <string-array name="action_pairs">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>9</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="action_pair_labels">
+        <item>none</item>
+        <item>screen up/down</item>
+        <item>page up/down</item>
+        <item>page prev/next</item>
+        <item>zoom 1.02X</item>
+        <item>zoom 1.05X</item>
+        <item>zoom 1.1X</item>
+        <item>zoom 1.2X</item>
+        <item>zoom 1.414X</item>
+        <item>zoom 2X</item>
+        <item>screen up/down reversed</item>
+        <item>page up/down reversed</item>
+        <item>page prev/next reversed</item>
+    </string-array>
+
+    <string name="volume_pair">Volume -/+ key actions</string>
+    <string name="up_down_pair">Up/Down key actions</string>
+    <string name="left_right_pair">Left/Right key actions</string>
+    <string name="zoom_pair">Zoom button actions</string>
+    <string name="long_zoom_pair">Long press zoom button actions</string>
+    <string name="right_up_down_pair">Nook Touch right up/down key actions</string>
+    <string name="top_bottom_tap_pair">Action for top/bottom tap</string>
+    <string name="default_volume_pair">1</string>
+    <string name="default_up_down_pair">1</string>
+    <string name="default_left_right_pair">2</string>
+    <string name="default_zoom_pair">7</string>
+    <string name="default_long_zoom_pair">8</string>
+    <string name="default_right_up_down_pair">1</string>
+    <string name="default_top_bottom_tap_pair">0</string>
+    <string name="hw">Hardware Specific Settings</string>
+    <string name="eink">E-ink optimizations</string>
+    <string name="nook2">Nook2 fast e-ink refresh</string>
+    <string name="disabled">Disabled</string>
+    <string name="keep_on">Keep screen on while reading</string>
+    <string name="show_zoom_on_scroll">Show zoom when scrolling</string>
+    <string name="history">Show recent files</string>
+    <string name="table_of_contents">Table of Contents</string>
+    <string name="toc_dialog_title">Table of Contents</string>
+    <string name="close">Close</string>
+    <string name="text_reflow">Text Reflow</string>
+    <string name="finish">Stop Attendance</string>
+    <string name="no_media_warning">Storage media not present</string>
+    <string name="no_media_hint">Sharing the storage media with a PC can make it inaccessible</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_backwards">Search backwards</string>
+    <string name="search_forwards">Search forwards</string>
+    <string name="search_document">Search document</string>
+    <string name="picker_title_App_Ver_Dir">%1$s %2$s: %3$s</string>
+    <string name="outline_title">Table of Contents</string>
+    <string name="enter_password">Enter password</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="searching_">Searching…</string>
+    <string name="toggle_links">Highlight and enable links</string>
+    <string name="no_further_occurrences_found">No further occurrences found</string>
+    <string name="select">Select</string>
+    <string name="search">Search</string>
+    <string name="copy">Copy</string>
+    <string name="strike_out">Strike-out</string>
+    <string name="delete">Delete</string>
+    <string name="highlight">Highlight</string>
+    <string name="underline">Underline</string>
+    <string name="edit_annotations">Edit annotations</string>
+    <string name="ink">Ink</string>
+    <string name="save">Save</string>
+    <string name="print">Print</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="parent_directory">[Up one level]</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="entering_reflow_mode">Entering reflow mode</string>
+    <string name="leaving_reflow_mode">Leaving reflow mode</string>
+    <string name="print_failed">Print failed</string>
+    <string name="select_text">Select text</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="no_text_selected">No text selected</string>
+    <string name="draw_annotation">Draw annotation</string>
+    <string name="nothing_to_save">Nothing to save</string>
+    <string name="document_has_changes_save_them_">Document has changes. Save them?</string>
+    <string name="cannot_open_document">Cannot open document</string>
+    <string name="cannot_open_document_Reason">Cannot open document: %1$s</string>
+    <string name="cannot_open_file_Path">Cannot open file: %1$s</string>
+    <string name="cannot_open_buffer">Cannot open buffer</string>
+    <string name="fill_out_text_field">Fill out text field</string>
+    <string name="okay">Okay</string>
+    <string name="choose_value">Choose value</string>
+    <string name="not_supported">Not supported</string>
+    <string name="copy_text_to_the_clipboard">Copy text to the clipboard</string>
+    <string name="more">More</string>
+    <string name="accept2">Accept</string>
+    <string name="copy_text">copy text</string>
+    <string name="format_currently_not_supported">Format currently not supported</string>
+    <string name="toggle_reflow_mode">Toggle reflow mode</string>
+    <!-- to be removed -->
+    <string-array name="formsArray">
+        <item>LAND PREPARATION</item>
+        <item>PLANTING</item>
+        <item>HERBICIDE APPLICATIONS</item>
+        <item>REPLANTING, GAP FILLING, THINNING</item>
+        <item>SOIL FERTILITY PRACTICES</item>
+        <item>WEEDING</item>
+        <item>SCOUTING and PEST CONTROL ACTIVITY LOG</item>
+        <item>HARVEST ACTIVITY LOG</item>
+        <item>GRADING AND BAILING ACTIVITY LOG</item>
+        <item>TRANSPORT HOUSE TO MARKET</item>
+        <item>POST-HARVEST ACTIVITY LOG</item>
+    </string-array>
+    <!-- Activities -->
+    <string-array name="landPreparationArray">
+        <item>Land clearing</item>
+        <item>Ploughing - tractor</item>
+        <item>Ploughing - oxen</item>
+        <item>Ripping - tractor</item>
+        <item>Ripping - oxen</item>
+        <item>Potholing (basins) – manual</item>
+        <item> Ridging – manual</item>
+        <item>Other (specify)</item>
+    </string-array>
+    <string-array name="plantingArray">
+        <item>Planting</item>
+    </string-array>
+    <string-array name="herbicideArray">
+        <item>Herbicide Application 1</item>
+        <item>Herbicide Application 2</item>
+    </string-array>
+    <string-array name="replantingArray">
+        <item>Replanting</item>
+        <item>Gap Filling</item>
+        <item>Thinning</item>
+    </string-array>
+    <string-array name="soilFertilityArray">
+        <item>Mulching</item>
+        <item>Compost</item>
+        <item>Manure</item>
+        <item>Foliar Feed application 1</item>
+        <item>Foliar Feed application 2</item>
+        <item>Foliar Feed application 3</item>
+    </string-array>
+    <string-array name="weedingArray">
+        <item>Manual Weeding 1</item>
+        <item>Manual Weeding 2</item>
+        <item>Manual Weeding 3</item>
+        <item>Manual Weeding 4</item>
+    </string-array>
+    <string-array name="scoutingPestControlArray">
+        <item>Scouting 1</item>
+        <item>Scouting 2</item>
+        <item>Scouting 3</item>
+        <item>Scouting 4</item>
+        <item>Scouting 5</item>
+        <item>Scouting 6</item>
+        <item>Scouting 7</item>
+        <item>Scouting 8</item>
+        <item>Scouting 9</item>
+        <item>Scouting 10</item>
+        <item>Scouting 11</item>
+        <item>Scouting 12</item>
+    </string-array>
+    <string-array name="harvestArray">
+        <item>Harvesting 1</item>
+        <item>Harvesting 2</item>
+        <item>Harvesting 3</item>
+        <item>Harvesting 4</item>
+    </string-array>
+    <string-array name="transportFieldToHouseArray">
+        <item>Transport field-house 1</item>
+        <item>Transport field-house 2</item>
+        <item>Transport field-house 3</item>
+        <item>Transport field-house 4</item>
+    </string-array>
+    <string-array name="transportToMarketArray">
+        <item>1st Delivery</item>
+        <item>2nd Delivery</item>
+        <item>3nd Delivery</item>
+        <item>4nd Delivery</item>
+    </string-array>
+    <string-array name="gradingArray">
+        <item>Grading 1</item>
+        <item>Grading 2</item>
+        <item>Grading 3</item>
+        <item>Grading 4</item>
+    </string-array>
+    <string-array name="bailingArray">
+        <item>Bailing 1</item>
+        <item>Bailing 2</item>
+        <item>Bailing 3</item>
+        <item>Bailing 4</item>
+    </string-array>
+    <string-array name="postHarvestArray">
+        <item>Destruction of Stalks 1</item>
+        <item>Destruction of Stalks 2</item>
+    </string-array>
+    <string-array name="labourTypeArray">
+        <item>Own</item>
+        <item>Hired</item>
+    </string-array>
+    <string-array name="genderArray">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="title_activity_all_forms">AllFormsActivity</string>
+    <string name="title_activity_plot_selection_actitivty">PlotSelectionActitivty</string>
+    <string name="start_attendance">Start Attendance</string>
+    <string name="title_activity_transparent">TransparentActivity</string>
+    <string name="title_activity_my_trainings">MyTrainings</string>
+    <string name="title_activity_jdemo_plot_eval">JDemoPlotEval</string>
+    <string name="title_activity_manual_unapp_farmer_search">ManualUnappFarmerSearch</string>
+
+</resources>

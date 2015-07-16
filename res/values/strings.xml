@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="update_farm_area">Update Farm Area</string>
+     <string name="search_farmer">Search For Farmer</string>
+</resources>

@@ -1,0 +1,305 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background"
+    android:gravity="center">
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Correct planting of seeds "
+                android:id="@+id/textView22"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgCorrectSeedPlant"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Too Deep"
+                    android:id="@+id/rbCorrectSeed1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCorrectSeedPlantClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Covered"
+                    android:id="@+id/rbCorrectSeed2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCorrectSeedPlantClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textAlignment="center" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Use of recommended number of seeds per planting station"
+                android:id="@+id/textView23"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgSeedPerStat"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rbSeedPerStat1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSeedPerStatClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+                    android:id="@+id/rbSeedPerStat2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSeedPerStatClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Use ofrecommended inter-row and intra-row spacing "
+                android:id="@+id/textView24"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgRowSpacing"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rbRowSpacing1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onRowSpacingClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+                    android:id="@+id/rbRowSpacing2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onRowSpacingClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Time of planting "
+                android:id="@+id/textView25"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgPlantingTime"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="before 15 Nov"
+                    android:id="@+id/rbPlantingTime1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPlantingTimeClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16-30 Nov"
+                    android:id="@+id/rbPlantingTime2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPlantingTimeClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1-15 Dec"
+                    android:id="@+id/rbPlantingTime3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPlantingTimeClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16-31 Dec"
+                    android:id="@+id/rbPlantingTime4"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1-15 Jan"
+                    android:id="@+id/rbPlantingTime5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPlantingTimeClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="after 15 Jan"
+                    android:id="@+id/rbPlantingTime6"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPlantingTimeClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Data"
+                android:onClick="onSaveDataClicked"
+                android:id="@+id/button"
+                android:textColor="@color/black" />
+
+            <include
+                layout="@layout/footer_fingers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </ViewFlipper>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="Server"
+        android:key="ip"
+        android:summary="Please provide server IP"></EditTextPreference>
+    <ListPreference     android:title="Language"
+        android:summary="Select The Kind of Language You Would Like To Use"
+        android:key="language"
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" ></ListPreference>
+</PreferenceScreen>

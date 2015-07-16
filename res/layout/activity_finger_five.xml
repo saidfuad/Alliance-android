@@ -1,0 +1,569 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@color/view_background">
+
+        <!-- View #1 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Level of pest infestation "
+                android:id="@+id/textView"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgPestLevel"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High"
+                    android:id="@+id/rbPestLevel1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPestLevelClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low"
+                    android:id="@+id/rbPestLevel2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPestLevelClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <include layout="@layout/footer_fingers"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Level of damage and fruit shedding due to pests"
+                android:id="@+id/textView35"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgPestDamage"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High"
+                    android:id="@+id/rbPestDamage1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPestDamageClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low"
+                    android:id="@+id/rbPestDamage2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPestDamageClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Signs in the field of when last scouting was done"
+                android:id="@+id/textView37"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgScoutSign"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More than a Week"
+                    android:id="@+id/rbScoutSign1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onLastScoutClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Less Than a Week"
+                    android:id="@+id/rbScoutSign2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onLastScoutClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Presence of empty pesticide containers"
+                android:id="@+id/textView39"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgEmptyCans"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:id="@+id/rbEmptyCans1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onEmptyPestCansClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Present"
+                    android:id="@+id/rbEmptyCans2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onEmptyPestCansClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Availability of pegboard and scouting records"
+                android:id="@+id/textView41"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgPegBoard"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Available"
+                    android:id="@+id/rbPegBoard1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPegBoardClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+                    android:id="@+id/rbPegBoard2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPegBoardClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Use of appropriate scouting method"
+                android:id="@+id/textView43"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgScoutMethod"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rbScoutMethod1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onScoutMethodClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rbScoutMethod2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onScoutMethodClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Time of spraying in relation to exceeding thresholds"
+                android:id="@+id/textView45"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgSprayingTime"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Too Late"
+                    android:id="@+id/rbSprayingTime1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSprayTimeClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On Time"
+                    android:id="@+id/rbSprayingTime2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSprayTimeClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Duration of pest absence after spraying (effectiveness)"
+                android:id="@+id/textView47"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgPestAbsDuration"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Effective"
+                    android:id="@+id/rbPestAbsDuration1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPestAbsClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Effective"
+                    android:id="@+id/rbPestAbsDuration2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onPestAbsClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Correct use of different types of pesticides"
+                android:id="@+id/textView49"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgCorrectPesticide"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incorrect Used"
+                    android:id="@+id/rbCorrectPesticide1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCorrectPestUseClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correct Used"
+                    android:id="@+id/rbCorrectPesticide2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCorrectPestUseClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Safe use &amp; storage of pesticides &amp; disposal of empty containers"
+                android:id="@+id/textView34"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgSafeUsageCans"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unsafe Usage"
+                    android:id="@+id/rbSafeUsageCans1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSafePestUseClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safe Usage"
+                    android:id="@+id/rbSafeUsageCans2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSafePestUseClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Data"
+                android:onClick="onSaveDataClicked"
+                android:id="@+id/button"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+            <include layout="@layout/footer_fingers"/>
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

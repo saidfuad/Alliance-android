@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="30dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/init"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="初始化" />
+
+        <TextView
+            android:id="@+id/cpuCardNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/release_card"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="发行卡片"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/get_random"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="获取随机数" />
+
+        <TextView
+            android:id="@+id/random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/authentication"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="外部认证" />
+
+        <Button
+            android:id="@+id/delete_file"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="删除文件" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/init_key"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="建立密钥" />
+
+        <Button
+            android:id="@+id/append_key"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="添加密钥" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/initBef"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="建立二进制文件"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/read_binary"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="读二进制文件" />
+
+        <TextView
+            android:id="@+id/read_binary_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/write_binary"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="写二进制文件" />
+
+        <EditText
+            android:id="@+id/write_binary_data"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/initRef"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="建立记录文件"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/read_record"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="读记录文件" />
+
+        <TextView
+            android:id="@+id/read_record_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/write_record"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="写记录文件" />
+
+        <EditText
+            android:id="@+id/write_record_data"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clear_rfid"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="清空"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随机数："
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/random_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

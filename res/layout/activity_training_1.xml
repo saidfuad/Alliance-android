@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCED91"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:keepScreenOn="true">
+
+
+    <DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/view_background"
+        android:text="DigitalClock"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/bStopTrainAtendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_weight="1.08"
+            android:text="@string/finish"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

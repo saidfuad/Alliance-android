@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/view_background"
+              android:orientation="vertical"
+              android:weightSum="1">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/view_background"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Enter first name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                     android:inputType="textCapWords"
+                    android:hint="first name" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Enter last name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etLName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                     android:inputType="textCapWords"
+                    android:hint="last name" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Choose Gender"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+                <Spinner
+                    android:id="@+id/spGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:entries="@array/gender"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Enter Id Number"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:hint="ID Number"
+                    android:inputType="textCapWords"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Enter phone number"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Enter email"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:hint="email"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Enter postal address"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/etPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:hint="postal address"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+                <TextView
+
+                    android:id="@+id/textView6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Choose country"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Choose Region"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Choose district"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Choose ward"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spWard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Enter village"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+                <Spinner
+                    android:id="@+id/spVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Choose subvillage"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/spSubVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Estimated Farm Acerage 1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etEstFarmArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:inputType="numberDecimal"
+                    android:minLines="1"
+                />
+            </LinearLayout>
+            <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Estimated Farm Acerage2"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etEstFarmArea2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:inputType="numberDecimal"
+                    android:minLines="1"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Estimated Farm Acerage 3"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etEstFarmArea3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:inputType="numberDecimal"
+                    android:minLines="1"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/view_background"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:text="Estimated Farm Acerage 4"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etEstFarmArea4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:inputType="numberDecimal"
+                    android:minLines="1"
+                />
+            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/bDone"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0"
+                android:textSize="@dimen/text_size"
+                android:text="Done" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

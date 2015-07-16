@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:gravity="center"
+android:background="@color/view_background"
+android:orientation="vertical"
+android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Crops"
+        android:id="@+id/bOtherCrops"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Log Land Preparation"
+        android:id="@+id/bLandPrep"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Log Planting"
+        android:id="@+id/bPlanting"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Log Herbicide Application"
+        android:id="@+id/bHerbApp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Germination"
+        android:id="@+id/bGermDate"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Log(Replanting,Gap Filling,Thinning,)"
+        android:id="@+id/bRGT"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Log Soil Fertility Practices"
+        android:id="@+id/bSoilFert"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Log Weeding"
+        android:id="@+id/bWeed"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Molases Trap Catches"
+        android:id="@+id/bTrap"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Log Scouting and Pest Control"
+        android:id="@+id/bScout"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

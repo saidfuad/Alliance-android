@@ -1,0 +1,615 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/view_background"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <!-- View #1 -->
+        <LinearLayout style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Soil Type"
+                android:id="@+id/textView"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/rgSoilType"
+                >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Poor     "
+                    android:id="@+id/rbSoilType1"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:onClick="onSoilTypeClicked" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:id="@+id/rbSoilType2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:onClick="onSoilTypeClicked"/>
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Good     "
+                    android:id="@+id/rbSoilType3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:onClick="onSoilTypeClicked"/>
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Water lodging risk"
+                android:id="@+id/textView19"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgWaterLogRisk"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low Risk "
+                    android:textColor="@color/black"
+                    android:id="@+id/rbRisk1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onWaterLogClicked"
+                    android:layout_gravity="center"
+                    
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High Risk"
+                    android:id="@+id/rbRisk2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onWaterLogClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Erosion prevention by using basins/ridges"
+                android:id="@+id/textView20"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgErosionPrev"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Ridges/Basins"
+                    android:id="@+id/rbErPrev1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onErosionPrevClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rigdes/Basins     "
+                    android:id="@+id/rbErPrev2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onErosionPrevClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Rotation practiced or not	"
+                android:id="@+id/textView21"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgCropRotation"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Rotation Practiced"
+                    android:id="@+id/rbCropRot1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCropRotationClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rotation Practiced"
+                    android:id="@+id/rbCropRot2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCropRotationClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Presence of ratoon crops (e.g. sprouting cotton/sorghum stalks)"
+                android:id="@+id/textView22"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgRatoon"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:id="@+id/rbRatoon1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onRatoonClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not Present"
+                    android:id="@+id/rbRatoon2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onRatoonClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Crop residues "
+                android:id="@+id/textView23"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgCropRes"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Burnt"
+                    android:id="@+id/rbCropRes1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCropResClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Removed"
+                    android:id="@+id/rbCropRes2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCropResClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mulch"
+                    android:id="@+id/rbCropRes3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCropResClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Manure applied "
+                android:id="@+id/textView24"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgManure"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rbManure1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onManureClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+                    android:id="@+id/rbManure2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onManureClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Early or late land preparation "
+                android:id="@+id/textView25"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgLandPrep"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="After September "
+                    android:id="@+id/rbLandPrep1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onLandPrepClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Before September"
+                    android:id="@+id/rbLandPrep2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onLandPrepClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            style="@style/center_flipper_items">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Proper seed bed preparation (finer vs. large clods)"
+                android:id="@+id/textView26"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgSeedBedPrep"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Large Clods"
+                    android:id="@+id/rbSeedBedPrep1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSeedBedPrepClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fine"
+                    android:id="@+id/rbSeedBedPrep2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onSeedBedPrepClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Data"
+                android:onClick="onSaveDataClicked"
+                android:id="@+id/button" />
+
+            <include
+                layout="@layout/footer_fingers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </ViewFlipper>
+
+</LinearLayout>

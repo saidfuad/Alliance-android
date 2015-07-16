@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CameraActivity">
+
+    <item
+        android:id="@+id/menu_upload_data"
+        android:icon="@drawable/ic_action_upload_farmers"
+        android:title="Upload Data" />
+
+    <item
+        android:id="@+id/menu_download_data"
+        android:icon="@drawable/ic_action_download_data"
+        android:title="Download data" />
+
+</menu>
+

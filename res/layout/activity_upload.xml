@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <!-- To display picture taken -->
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:textSize="21dp"
+        android:text="First name"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tFName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="First name"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:textSize="21dp"
+        android:text="Last name"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tLName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Last name"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:textSize="21dp"
+        android:text="Gender"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Gender"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="ID"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/tId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="ID"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Phone"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Phone"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Email"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="email"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Postal Address"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Post Address"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Country"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Country"
+        android:textColor="#000000"
+        android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="District"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tRegion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="District"
+        android:textColor="#000000"
+        android:visibility="gone" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Region"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <TextView
+
+        android:id="@+id/tDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Region"
+        android:textColor="#000000"
+        android:visibility="gone" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Village"
+        android:textIsSelectable="true"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tVillage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Village"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Ward"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tWard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Ward"
+        android:textColor="#000000"
+        android:visibility="gone" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Sub Village"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tSubVillage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Sub Village"
+        android:textColor="#000000" />
+        </LinearLayout>
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Estimate Farm Area"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tEstFarmArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Est Farm Area"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Latitude"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Latitude"
+        android:textColor="#000000" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/view_background"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingMultiplier="0.85"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:text="Longitude"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvLongt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Longitude"
+        android:textColor="#000000" />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/txt_font"
+        android:textSize="21dp" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="35dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="20dp"
+        android:text="@string/btnUploadToServer"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
+</ScrollView>

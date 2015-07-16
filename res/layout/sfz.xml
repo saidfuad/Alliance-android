@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sfz_bg" >
+
+    <TextView
+        android:id="@+id/sfz_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="56dp"
+        android:layout_y="23dp"
+        android:text="XXXXXX"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/sfz_mouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="105dp"
+        android:layout_y="70dp"
+        android:text="XX"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/sfz_sex"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_x="56dp"
+        android:layout_y="44dp"
+        android:text="XX"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/sfz_nation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="126dp"
+        android:layout_y="45dp"
+        android:text="XX"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/sfz_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="135dp"
+        android:layout_y="70dp"
+        android:text="XX"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/sfz_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="97dp"
+        android:layout_y="158dp"
+        android:text="XXXXXXXXXXXXXXXXXXXXXX"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/sfz_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="56dp"
+        android:layout_y="69dp"
+        android:text="XXXX"
+        android:textColor="#000000" />
+
+   	<TextView android:id="@+id/sfz_address" android:layout_width="160dp"
+		android:layout_height="62dp" android:layout_x="55dp" android:layout_y="94dp"
+		android:text="长江省长江市长江区长江街道XX号" android:textColor="#000000" />
+
+	<ImageView android:id="@+id/sfz_photo" android:layout_width="102px"
+		android:layout_height="126px" android:layout_x="213dp"
+		android:layout_y="20dp" />
+
+</AbsoluteLayout>

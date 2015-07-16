@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/view_background">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/view_background"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Other Crops"
+                android:id="@+id/textView40"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="35dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="First Crop"
+                android:id="@+id/textView46"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_marginBottom="35dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spFirstCrop"
+                android:layout_marginBottom="35dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Second Crop"
+                android:id="@+id/textView42"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_marginBottom="35dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spSecondCrop"
+                android:layout_marginBottom="35dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Third Crop"
+                android:id="@+id/textView44"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_marginBottom="35dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spThirdCrop"
+                android:layout_marginBottom="35dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:id="@+id/bSave"
+                        android:layout_weight="0"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:id="@+id/bCancel"
+                        android:layout_weight="0"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

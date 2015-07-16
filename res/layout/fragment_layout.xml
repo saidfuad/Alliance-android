@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">-->
+<com.bensoft.main.DashBoardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@color/view_background">
+
+
+    <!--  new farmer Button -->
+    <ImageButton
+        android:id="@+id/bNew"
+        style="@style/DashboardButton"
+        android:background="@drawable/news"/>
+
+
+    <!--  mapout Button -->
+    <ImageButton
+        android:id="@+id/bMap"
+        style="@style/DashboardButton"
+        android:background="@drawable/mapping" />
+    <!--  farm input Button -->
+    <ImageButton
+        android:id="@+id/bInput"
+        style="@style/DashboardButton"
+        android:background="@drawable/inputs" />
+    <ImageButton
+        android:id="@+id/bTrain"
+        style="@style/DashboardButton"
+        android:background="@drawable/train" />
+    <ImageButton
+        android:id="@+id/bTrainMat"
+        style="@style/DashboardButton"
+        android:background="@drawable/train_mat" />
+    <ImageButton
+    android:id="@+id/bAllForms"
+    style="@style/DashboardButton"
+    android:background="@drawable/forms" />
+    <ImageButton
+        android:id="@+id/bSchedule"
+        style="@style/DashboardButton"
+        android:background="@color/view_background" />
+    <ImageButton
+        android:id="@+id/bSignDocs"
+        style="@style/DashboardButton"
+        android:background="@color/view_background" />
+
+    <!--  settings Button -->
+    <ImageButton
+        android:id="@+id/bSet"
+        style="@style/DashboardButton"
+        android:background="@drawable/settings" />
+
+
+</com.bensoft.main.DashBoardLayout>
+    <!--</ScrollView>-->

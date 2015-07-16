@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/widget56"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/widget44"
+      
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/textView1"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer ID: "
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tvGenID"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget44"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/textView2"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InputType: "
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tvInputType"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget44"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/textView3"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Price: "
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tvInputPrice"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget44"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/textView5"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Total: "
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tvInputTotal"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget44"
+        android:textColor="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/textView4"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Unit: "
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tvInputUnit"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

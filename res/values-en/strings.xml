@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <string name="app_name">Authentication</string>
+    <string name="open_serial_fail">Open the serial port fails!</string>
+
+    <!-- MyApplication -->
+    <string name="connect_success">connect success</string>
+    <string name="connect_fail">connect fail</string>
+    <string name="connect_lost">connect lost</string>
+    <!-- BluetoothChat -->
+    <string name="enable_bluetooth">Bluetooth-enabled</string>
+    <string name="disable_bluetooth">Bluetooth has been disabled</string>
+    <string name="no_bluetooth">Device does not support Bluetooth</string>
+    <string name="connecting_bluetooth">connecting,please wait...</string>
+    <string name="connect_bluetooth">connect bluetooth</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_bluetooth_device">select a device to connect</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+
+    <!-- main activity -->
+    <string name="baudrate">Baudrate:</string>
+    <string name="version">Version</string>
+    <string name="stop_connect">Disconnect</string>
+    <string name="pin">ID</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="loop_read">Loop Read</string>
+    <string name="barcode">Bar Code</string>
+    <string name="rfid">RFID</string>
+    <string name="exit_toast">Press again to exit the program</string>
+    <!-- sfz activity -->
+    <string name="read_sfz">Reader</string>
+    <string name="sequential_sfz">Continuous reader</string>
+    <string name="stop">Stop</string>
+    <string name="clear_sfz">Clear</string>
+    <string name="read_card_fail">Did not find a card</string>
+    <string name="read_card_success">Successful reader</string>
+
+    <!-- FingerprintActivity -->
+    <string name="print_finger">Please click fingerprints!</string>
+    <string name="print_finger_again">Press again fingerprint!</string>
+    <string name="processing">Processing ...</string>
+    <string name="generate_char_fail">Generate the feature value failed!</string>
+    <string name="reg_model_success">Template synthesis success!</string>
+    <string name="reg_model_fail">Synthetic template failed!</string>
+    <string name="register_success">Registered successfully!</string>
+    <string name="register_fail">Registration failed!</string>
+    <string name="verifying_wait">Validating, please wait ...</string>
+    <string name="down_char_fail">Download a template fails</string>
+    <string name="verifying_through">Verified through</string>
+    <string name="verifying_fail">Authentication failed</string>
+    <string name="up_image_success">up image success</string>
+    <string name="up_image_fail">up image fail</string>
+    <string name="clear_model">Clear Model</string>
+    <string name="id_model">ID:</string>
+    <string name="clear_model_success">clear model success</string>
+    <string name="clear_model_fail">clear model fail</string>
+    <string name="enter_id">please enter ID</string>
+    <string name="register3">register</string>
+    <string name="down_store">down and store</string>
+    <string name="validate3">verification</string>
+    <string name="down_store_success">down and store success</string>
+    <string name="down_store_fail">down and store fail</string>
+    <string name="search_success">search success</string>
+    <string name="search_fail">search fail</string>
+    <string name="down_store_null">model can not be null</string>
+    <string-array name="fingerprint_size">
+        <item>small fingerprint</item>
+        <item>big fingerprint</item>
+    </string-array>
+
+    <!-- RFID -->
+    <string name="card_number">Card</string>
+    <string name="read_card">Reader</string>
+    <string name="write_card">Write cards</string>
+    <string name="write_password">Password:</string>
+    <string name="update_password">Change Password</string>
+    <string name="write_block_num">Write block number:</string>
+    <string name="write_data">Write Data:</string>
+    <string name="read_block_num">Read block number:</string>
+    <string name="read_data">Read data:</string>
+    <string name="writing_wait">Writing cards, please wait ...</string>
+    <string name="reading_wait">Being reader, please wait ...</string>
+    <string name="writing_success">Successful write cards</string>
+    <string name="writing_fail">Failed to write cards</string>
+    <string name="reading_success">Successful reader</string>
+    <string name="reading_fail">Reader fails</string>
+    <string name="card_to_area">Keep the card into a reader</string>
+    <string name="first_card">Please reader, and then verify the fingerprint!</string>
+    <string name="back">Back</string>
+    <string name="register_fingerprint">Registering fingerprints</string>
+    <string name="validate_fingerprint">Fingerprint verification</string>
+    <string name="calibration">calibration</string>
+    <string name="first_register">Please register fingerprints!</string>
+    <string name="no_card_with_data">Did not find a card with return data</string>
+    <string name="no_card_without_data">Did not find a card with no return data, timeout! </string>
+    <string name="find_card_exception">May be other exceptions</string>
+    <string name="bluetooth_no_connect">Bluetooth is not connected!</string>
+    <string name="write_data_toast">Write data can not be empty</string>
+    <string name="write_toast">Write block number, the data can not be empty</string>
+    <string name="read_toast">When read in block number can not be empty</string>
+
+    <!-- barcode -->
+    <string name="open_success">open bar code success</string>
+    <string name="open_fail">open bar code fail</string>
+    <string name="close_success">close bar code success</string>
+    <string name="close_fail">close bar code fail</string>
+    <string name="scan">scan</string>
+    <string name="scan_parameter">Scan Configuration Parameter</string>
+    <string name="close_scan">close</string>
+    <string name="setting">Setting</string>
+    <string name="not_init">Not initialized!</string>
+    <string name="not_open">Not open!</string>
+    
+    <string name="setHost">setHost</string>
+    <string name="packetformat">packetformat</string>
+    <string name="startdecode">startdecode</string>
+    <string name="ack">ACK</string>
+    <string name="nak">NAK</string>
+    <string name="prepare_dialog">please wait...</string>
+    <string name="decode_fail">decode fail</string>
+    <string name="enable">enable</string>
+    <string name="disable">disable</string>
+    
+    <string name="restore">Set Factory Defaults</string>
+    <string name="set_host">Set Host</string>
+    <string name="disable_all_symbologies">Disable All Symbologies</string>
+    <string name="one_d_symbologies">1D Symbologies</string>
+    <string name="upc_a_text">UPC-A</string>
+    <string name="upc_e_text">UPC-E</string>
+    <string name="upc_e1_text">UPC-E1</string>
+    <string name="ean_8_jan_8_text">EAN-8/JAN-8</string>
+    <string name="ean_13_jan_13_text">EAN-13/JAN-13</string>
+    <string name="bookland_ean_text">Bookland EAN</string>
+    <string name="bookland_isbn_format_text">Bookland ISBN Format</string>
+    <string name="enable_isbn_10">Bookland ISBN-10</string>
+    <string name="enable_isbn_13">Bookland ISBN-13</string>
+    <string name="ucc_coupon_extended_code_text">UCC COUPON EXTENDED CODE</string>
+    <string name="issn_ean_text">ISSN EAN</string>
+    <string name="code_128_text">Code 128</string>
+    <string name="gs1_128_text">GS1-128 (formerly UCC/EAN-128)</string>
+    <string name="isbt_128_text">ISBT 128</string>
+    <string name="code_39_text">Code 39</string>
+    <string name="trioptic_code_39_text">Trioptic Code 39</string>
+    <string name="code_93_text">Code 93</string>
+    <string name="code_11_text">Code 11</string>
+    <string name="itf_text">Interleaved 2 of 5</string>
+    <string name="dtf_text">Discrete 2 of 5</string>
+    <string name="codabar_text">Codabar</string>
+    <string name="msi_text">MSI</string>
+    <string name="ctf_text">Chinese 2 of 5</string>
+    <string name="mtf_text">Matrix 2 of 5</string>
+    <string name="ktf_text">Korean 3 of 5</string>
+    <string name="inverse_1d_text">Inverse 1D</string>
+    <string name="regular">Regular</string>
+    <string name="inverse_only">Inverse Only</string>
+    <string name="inverse_autodetect">Inverse Autodetect</string>
+    
+    
+    <string name="two_d_symbologies">2D Symbologies</string>
+    <string name="pdf417_text">PDF417</string>
+    <string name="micro_pdf417_text">MicroPDF417</string>
+    <string name="code_128_emulation_text">Code 128 Emulation</string>
+    <string name="data_matrix">Data Matrix</string>
+    <string name="data_matrix_inverse_text">Data Matrix Inverse</string>
+    <string name="decode_mirror_images_text">Decode Mirror Images (Data Matrix Only)</string>
+    <string name="never">Never</string>
+    <string name="always">Always</string>
+    <string name="auto">Auto</string>
+    <string name="maxicode_text">Maxicode</string>
+    <string name="qr_code_text">QR Code</string>
+    <string name="qr_inverse_text">QR Inverse</string>
+    <string name="micro_qr_text">MicroQR</string>
+    <string name="aztec_text">Aztec</string>
+    <string name="aztec_inverse_text">Aztec Inverse</string>
+    
+    <string name="postal_codes">Postal Codes</string>
+    <string name="us_postnet_text">US Postnet</string>
+    <string name="us_planet_text">US Planet</string>
+    <string name="uk_postal_text">UK Postal</string>
+    <string name="japan_postal_text">Japan Postal</string>
+    <string name="australia_post_text">Australia Post</string>
+    <string name="netherlands_kix_code_text">Netherlands KIX Code</string>
+    <string name="usps_4cb_one_code_intelligent_mail_text">USPS 4CB/One Code/Intelligent Mail</string>
+    <string name="upu_fics_postal_text">UPU FICS Postal</string>
+    
+    <string name="set_success">Set successfully</string>
+    <string name="set_fail">Failed to set</string>
+    <!-- 15693 -->
+    <string name="init">init</string>
+    <string name="find">find</string>
+    <string name="read_15693">Read</string>
+    <string name="write_15693">Write</string>
+    <string name="no_null_toast">Data cannot be empty!</string>
+    <string name="init_success">Initial success</string>
+    <string name="init_fail">Failed to initialize</string>
+    <string name="find_success">Success</string>
+    <string name="find_fail">Fail</string>
+    <string name="read_15693_success">Read Success</string>
+    <string name="read_15693_fail">Read Fail</string>
+    <string name="write_15693_success">Write Success</string>
+    <string name="write_15693_fail">Write Fail</string>
+</resources>

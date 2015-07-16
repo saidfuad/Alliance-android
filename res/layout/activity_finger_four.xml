@@ -1,0 +1,303 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background">
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="First branches are at not more than 30cm and growing sideways "
+                android:id="@+id/textView22"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgFirstBranch"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poor Branching"
+                    android:id="@+id/rbFirstBranch1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/rbFirstBranch2"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/rbFirstBranch3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/rbFirstBranch4"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/rbFirstBranch5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/rbFirstBranch6"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:id="@+id/rbFirstBranch7"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:id="@+id/rbFirstBranch8"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:id="@+id/rbFirstBranch9"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:id="@+id/rbFirstBranch10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Branching"
+                    android:id="@+id/rbFirstBranch11"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFirstBranchClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Foliar appearance of the crop show signs of poor weeding"
+                android:id="@+id/textView28"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/rgFoliar"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bad Foliar Appearance"
+                    android:id="@+id/rbFoliar1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFoliarClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Foliar Appearance"
+                    android:id="@+id/rbFoliar2"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onFoliarClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <include
+                    layout="@layout/footer_fingers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Absence of weeds at the time of assessment "
+                android:id="@+id/textView30"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:onClick="onWeedsClicked"
+                android:id="@+id/rgWeeds"
+                android:layout_gravity="center" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weeds Present"
+                    android:id="@+id/rbWeeds1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onWeedsClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Weeds"
+                    android:id="@+id/rbWeeds2"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onWeedsClicked"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Data"
+                android:onClick="onSaveDataClicked"
+                android:id="@+id/button"
+                android:textColor="@color/black" />
+
+            <include
+                layout="@layout/footer_fingers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

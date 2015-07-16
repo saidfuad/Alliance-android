@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bensoft.main" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <!-- Accessing camera hardware -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+        Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name2"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.bensoft.main.FarmerRegistrationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bensoft.main.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bensoft.main.DashBoardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.TabActivities"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.ShowData"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bensoft.main.UploadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bensoft.main.FarmInputsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bensoft.main.TrainingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bensoft.main.TrainingMaterialsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.authentication.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.MainActivity2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.SFZActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.FingerprintActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.FingerprintActivityVeri"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bensoft.main.DemoPlotEvalutationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.RFIDActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.ReadCardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.TypeBActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.BarCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.BarCodeSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.RFID15693Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.CPUActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.ChoosePDFActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.MuPDFActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.ms-xpsdocument" />
+                <data android:mimeType="application/xps" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/x-cbz" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.xps" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.cbz" />
+                <data android:host="*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.OutlineActivity"
+            android:label="@string/outline_title"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.PrintDialogActivity"
+            android:label="@string/print"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.bensoft.forms.AllFormsActivity"
+            android:label="@string/title_activity_all_forms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.forms.FingerOne"
+            android:label="@string/title_activity_all_forms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.forms.FingerTwo"
+            android:label="@string/title_activity_all_forms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.forms.FingerThree"
+            android:label="@string/title_activity_all_forms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.forms.FingerFour"
+            android:label="@string/title_activity_all_forms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.forms.FingerFive"
+            android:label="@string/title_activity_all_forms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.PlotSelectionActitivty"
+            android:label="@string/title_activity_plot_selection_actitivty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.CalenderActivity"
+            android:label="@string/title_activity_plot_selection_actitivty" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.TransparentActivity"
+            android:label="@string/title_activity_transparent"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.MyTrainingsActivity"
+            android:label="@string/title_activity_my_trainings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.SignDocActivity"
+            android:label="@string/title_activity_my_trainings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.SettingsActivity"
+            android:label="@string/title_activity_my_trainings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.ApprovedFarmerSearch"
+            android:label="@string/title_activity_my_trainings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.ManualFarmerSearch"
+            android:label="@string/title_activity_my_trainings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.forms.JDemoPlotEval"
+            android:label="@string/title_activity_jdemo_plot_eval"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.authentication.activity.UnappFarmerSearch"
+            android:label="@string/title_activity_manual_unapp_farmer_search"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.authentication.activity.ManualUnappFarmerSearch"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.bensoft.main.InvoiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.AllFarmAssesmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.OtherCropsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.GoodRainsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.land_prep.LandClearActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.land_prep.PloughingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.land_prep.RippingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.land_prep.PotholingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.land_prep.RidgingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.bensoft.farm.assesment.planting.RowPlantingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.bensoft.farm.assesment.planting.BroadcastPlantingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.farm.assesment.herb_application.HerbApplicationActivity1"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.bensoft.farm.assesment.herb_application.HerbApplicationActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bensoft.main.UpdateFarmEstimateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

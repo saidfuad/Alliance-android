@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:background="@color/view_background"
+              android:layout_height="match_parent">
+    <TextView android:text="Current Farm Area"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="30dp"/>
+    <TextView 
+    android:id="@+id/tvCurrentArea"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="30dp"/>
+    <TextView android:text="New Farm Area"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="30dp"/>
+    <EditText android:inputType="numberDecimal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="30dp"
+              android:id="@+id/etNewFarmArea"
+    />
+    <Button   android:id="@+id/bUpdateFarmArea"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/update_farm_area"
+              android:textSize="30dp"/>
+
+</LinearLayout>
